@@ -2,7 +2,7 @@
   "name": "kfes-gk",
   "version": "0.1.0",
   "private": true,
-  "homepage":"/kfes-gk/",
+  "homepage":"https://voicenoid.github.io/kfes-gk/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
