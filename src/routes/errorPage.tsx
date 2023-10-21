@@ -1,5 +1,9 @@
 function ErrorPage(){
-    return <h2>Error</h2>
+    return (
+        <div> 
+            [Error]このページは存在しません。
+        </div>
+    )
 }
 
 export default ErrorPage;

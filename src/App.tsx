@@ -1,4 +1,4 @@
-import Home from './routes/home';
+import Home from './routes/homePage';
 import { Route, Routes } from 'react-router';
 import ErrorPage from './routes/errorPage';
 import Questions from './routes/questions';
@@ -9,7 +9,6 @@ import { Link } from '@mui/material';
 
 
 function App() {
-  //const userData = localStorage.setItem("userData", JSON.stringify(initUserData));
   const theme = createTheme({
     palette: {
       primary: {
@@ -30,7 +29,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <Container fixed>
-        <Box sx={{ margin: 2, bgcolor: 'background.paper',borderRadius: 2,p: 2,}}>
+        <Box sx={{ margin: 0.5, marginTop: 2,bgcolor: 'background.paper',borderRadius: 2}}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/questions/:id" element={<Questions />} />
