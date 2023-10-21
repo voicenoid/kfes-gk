@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/"> 
+    <BrowserRouter basename="/kfes-gk/"> 
       <App/>
     </BrowserRouter>
   </React.StrictMode>
