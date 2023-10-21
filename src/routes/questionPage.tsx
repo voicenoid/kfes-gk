@@ -42,11 +42,13 @@ const QuestionPage = (props:Props)=> {
                     <img src={imgCorrect} width="100%" alt="正解"/>
                 </Container>
                 <Container sx={{marginTop:3}}> 
-                <Grid container direction="row-reverse" justifyContent="flex-end" alignItems="center">
-                    <div>Avatar</div>
-                    <Card sx={{ margin: 3, p: 1 }}>
+                <Grid container direction="row" justifyContent="space-evenly" alignItems="center" >
+                    <Grid item xs ={1}>Avatar</Grid>
+                    <Grid item xs={10}> 
+                    <Card sx={{ margin: 3, p: 1, }}>
                         <Typography variant="body1">{qData.anstxt}</Typography>
                     </Card>
+                    </Grid>
                 </Grid>
                 </Container>
                 <Container sx={{ display: "flex", justifyContent: "center" }}>
