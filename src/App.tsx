@@ -26,7 +26,7 @@ function App() {
       <ThemeProvider theme ={theme}>
       <AppBar position="static" >
         <Toolbar>
-          <Typography ><Link href ="/" sx={{color:"white"}}>謎解きアプリ</Link></Typography>
+          <Typography ><Link href ="/kfes-gk" sx={{color:"white"}}>謎解きアプリ</Link></Typography>
         </Toolbar>
       </AppBar>
       <Container fixed>
