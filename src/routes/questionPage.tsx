@@ -1,7 +1,7 @@
 import { Box, Card, Grid, Typography,TextField, Container, IconButton, Button } from "@mui/material";
 import questionsData from "../questions.json";
 import q0 from "../images/questions/q0.jpg";
-import q1 from "../images/questions/q0.jpg";
+import q1 from "../images/questions/q1.jpg";
 import q2 from "../images/questions/q2.jpg";
 import q3 from "../images/questions/q3.jpg";
 import q4 from "../images/questions/q4.jpg";
