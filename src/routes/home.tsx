@@ -28,7 +28,7 @@ function Home(){
     return (
         <div>
             <Typography variant="h4" sx={{}}>怪物たちの場所</Typography>
-            <img src={imgMaps} width="100%" />
+                <img src={imgMaps} width="100%" />
             <Typography variant="h4">説明</Typography>
             <Box sx={{ margin: 3 }}>
                 <Typography variant="body1">

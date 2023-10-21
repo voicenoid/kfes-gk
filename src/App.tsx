@@ -26,14 +26,14 @@ function App() {
       <ThemeProvider theme ={theme}>
       <AppBar position="static" >
         <Toolbar>
-          <Typography ><Link href ="/" sx={{color:"white"}}>謎解きアプリ</Link></Typography>
+          <Typography ><Link href ="kfes-gk/" sx={{color:"white"}}>謎解きアプリ</Link></Typography>
         </Toolbar>
       </AppBar>
       <Container fixed>
         <Box sx={{ margin: 2, bgcolor: 'background.paper',borderRadius: 2,p: 2,}}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/questions/:id" element={<Questions />} />
+            <Route path="kfes-gk/" element={<Home />} />
+            <Route path="kfes-gk/questions/:id" element={<Questions />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Box>
