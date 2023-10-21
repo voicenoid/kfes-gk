@@ -17,7 +17,9 @@ function Home(){
     for(var i:number=0;i<userData.length;i++){
         individualUserData = localStorage.getItem(i as unknown as string);
         individualUserDataString = individualUserData;
+
         console.log(individualUserData)
+        
         individualUserData = Boolean(individualUserData);
         userData[i][0] = individualUserData;
         userData[i][1] = individualUserDataString;

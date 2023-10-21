@@ -6,8 +6,8 @@ import q2 from "../images/questions/q2.jpg";
 import q3 from "../images/questions/q3.jpg";
 import q4 from "../images/questions/q4.jpg";
 import imgCorrect from "../images/correct.jpg"
-import { Handshake, Send } from "@mui/icons-material";
-import { SetStateAction, useState } from "react";
+import { Send } from "@mui/icons-material";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -27,7 +27,7 @@ const QuestionPage = (props:Props)=> {
         setSendText(text);
         setText("");
 
-        if(text == qData.ans){
+        if(text === qData.ans){
             console.log("Success!!");
             await localStorage.setItem(String(props.questionsID),qData.anscode);
             await window.location.reload();
@@ -39,7 +39,7 @@ const QuestionPage = (props:Props)=> {
         return(
             <div>
                 <Container sx={{ display: "flex", justifyContent: "center" }}>
-                    <img src={imgCorrect} width="100%"/>
+                    <img src={imgCorrect} width="100%" alt="正解"/>
                 </Container>
                 <Container sx={{marginTop:3}}> 
                 <Grid container direction="row-reverse" justifyContent="flex-end" alignItems="center">
@@ -58,13 +58,15 @@ const QuestionPage = (props:Props)=> {
     }else{
         return(
             <div>
-                <Grid container direction="row-reverse" justifyContent="flex-end" alignItems="center">
-                    <div>Avatar</div>
-                    <Card sx={{ margin: 3, p: 1 }}>
+                <Grid container direction="row" justifyContent="space-evenly" alignItems="center" >
+                    <Grid item xs ={1}>Avatar</Grid>
+                    <Grid item xs={10}> 
+                    <Card sx={{ margin: 3, p: 1, }}>
                         <Typography variant="body1">{qData.text1}</Typography>
                     </Card>
+                    </Grid>
                 </Grid>
-                <img src={qu[Number(props.questionsID)]} width="100%" />
+                <img src={qu[Number(props.questionsID)]} width="100%" alt="問題"/>
                 <Box sx={{ display: "flex", justifyContent: "center", }}>
                     <Grid container direction="column" justifyContent="center" alignItems="center" >
                         <Typography variant="body1">{qData.text2}</Typography>
