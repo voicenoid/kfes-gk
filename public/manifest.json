@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "謎解きアプリ by 総務局",
+  "name": "2023年度くぬぎだ祭 謎解きアプリ Produced by 総務局",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#ff5722",
   "background_color": "#ffffff"
 }
