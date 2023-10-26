@@ -1,6 +1,11 @@
 import {Typography, Accordion, AccordionSummary, AccordionDetails, } from "@mui/material";
 import {ExpandMore } from "@mui/icons-material";
 import React from "react";
+import q1h1 from "../images/hints/q1-h1.jpg";
+import q1h2 from "../images/hints/q1-h2.jpg";
+import q4h1 from "../images/hints/q4-h1.jpg";
+import q4h2 from "../images/hints/q4-h2.jpg";
+import q4h3 from "../images/hints/q4-h3.jpg";
 
 
 type Props = {
@@ -17,7 +22,7 @@ const AdditionHintArea = (props:Props) =>{
                             <Typography>ヒント1</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography></Typography>
+                            <img src={q1h1} width="100%" alt="ヒント"/>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
@@ -25,7 +30,7 @@ const AdditionHintArea = (props:Props) =>{
                             <Typography>ヒント2</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography></Typography>
+                            <img src={q1h2} width="100%" alt="ヒント"/>
                         </AccordionDetails>
                     </Accordion>
                 </React.Fragment>
@@ -38,7 +43,7 @@ const AdditionHintArea = (props:Props) =>{
                             <Typography>ヒント2</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            
+                            <img src={q4h1} width="100%" alt="ヒント"/>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
@@ -46,7 +51,7 @@ const AdditionHintArea = (props:Props) =>{
                             <Typography>ヒント3</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            
+                            <img src={q4h2} width="100%" alt="ヒント"/>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
@@ -54,7 +59,7 @@ const AdditionHintArea = (props:Props) =>{
                             <Typography>ヒント4</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            
+                            <img src={q4h3} width="100%" alt="ヒント"/>
                         </AccordionDetails>
                     </Accordion>
                 </React.Fragment>

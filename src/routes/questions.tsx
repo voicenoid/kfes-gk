@@ -5,7 +5,6 @@ import QuestionPage from "./questionPage";
 function Questions(){
     const pm = useParams();
     const pmid = pm.id;
-    console.log(pmid);
     if(Number(pmid)<5 && 0<=Number(pmid)){
         return <QuestionPage questionsID ={pmid}/>
     }else{
