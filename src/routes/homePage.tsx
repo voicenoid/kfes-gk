@@ -1,4 +1,4 @@
-import { Typography, Card, Box } from "@mui/material";
+import { Typography, Card, Box} from "@mui/material";
 import imgMaps from "../images/maps.jpg";
 import imgCard from "../images/card.jpg"
 import React from "react";
@@ -39,9 +39,9 @@ function Home(){
                     怪物たちはマップの場所に散らばった。奴らのところに行くと謎解き問題が出題される。その問題を解くことで計画を阻止できるぞ！奴らが出した謎の答えは最後の部屋に入るためのパスワードになっている。<b>すべての問題を解き終えたら</b> 3 棟 3 階多目的室 3330-2（●の印があ るところ）に向かいパスワードを言おう！
                 </Typography>
             </Box>
-            <Box sx={{marginTop:5}}>
+            <Box sx={{marginTop:6}}>
             <Typography variant="h4">謎解きカード</Typography>
-            <Card sx={{p: 1 }}>
+            <Card sx={{marginTop:1,p: 1 }}>
                 <img src={imgCard} width="100%" alt="謎解きカード" />
             </Card>
             </Box>
@@ -54,6 +54,7 @@ function Home(){
                     ))}
                 </Typography>
             </Box>
+            
             <div>
 
             </div>
