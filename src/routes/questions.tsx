@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import QuestionPage from "./questionPage";
 
+
 function Questions(){
     const pm = useParams();
     const pmid = pm.id;
