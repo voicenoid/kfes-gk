@@ -30,23 +30,23 @@ function Home(){
     return (
         <div>
             <Box> 
-            <Typography variant="h4" sx={{}}>怪物たちの場所</Typography>
+            <Typography variant="h5" sx={{}}>怪物たちの場所</Typography>
             <img src={imgMaps} width="100%" alt="東京高専MAP"/>
             </Box>
             <Box sx={{ marginTop: 1}}>
-                <Typography variant="h4">説明</Typography>
+                <Typography variant="h5">説明</Typography>
                 <Typography variant="body1" sx={{marginTop:1}}>
                     怪物たちはマップの場所に散らばった。奴らのところに行くと謎解き問題が出題される。その問題を解くことで計画を阻止できるぞ！奴らが出した謎の答えは最後の部屋に入るためのパスワードになっている。<b>すべての問題を解き終えたら</b> 3 棟 3 階多目的室 3330-2（●の印があ るところ）に向かいパスワードを言おう！
                 </Typography>
             </Box>
             <Box sx={{marginTop:6}}>
-            <Typography variant="h4">謎解きカード</Typography>
+            <Typography variant="h5">謎解きカード</Typography>
             <Card sx={{marginTop:1,p: 1 }}>
                 <img src={imgCard} width="100%" alt="謎解きカード" />
             </Card>
             </Box>
             <Box sx={{ boxShadow: 1, borderRadius: 3, p: 4, margin: 4, display: "flex", justifyContent: "center", backgroundColor: "primary.main", color: "white" }}>
-                <Typography variant="h5">パスワードは<br />
+                <Typography variant="h6">パスワードは<br />
                     {userData.map((data, index) => (
                         <React.Fragment key={index}>
                             {data[0] ? <>{data[1]}</> : <>{<SquareOutlinedIcon />}</>}
