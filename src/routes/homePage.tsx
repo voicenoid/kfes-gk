@@ -1,4 +1,4 @@
-import { Typography, Card, Box, Grid, Stack, } from "@mui/material";
+import { Typography, Card, Box, Grid, Stack, Divider, } from "@mui/material";
 import imgMaps from "../images/maps.jpg";
 import imgCard from "../images/card.jpg"
 import { Circle, SquareOutlined } from '@mui/icons-material';
@@ -31,7 +31,8 @@ const Home = () => {
                 <Typography variant="h5" sx={{}}>怪物たちの場所</Typography>
                 <img src={imgMaps} width="100%" alt="東京高専MAP" style={{ marginTop: 1 }} />
             </Box>
-            <Box sx={{ marginTop: 6 }}>
+            <Divider sx={{marginTop:3,marginBottom:3}}/>
+            <Box>
                 <Typography variant="h5">説明</Typography>
                 <Typography variant="body1" sx={{ marginTop: 1 }}>
                     怪物たちはマップの場所に散らばった。奴らのところに行くと謎解き問題が出題される。その問題を解くことで計画を阻止できるぞ！奴らが出した謎の答えは最後の部屋に入るためのパスワードになっている。<b>すべての問題を解き終えたら</b> <span style={{ color: 'red' }}>3 棟 3 階多目的室 3330-2</span>（<Circle fontSize="small" style={{ color: "red", verticalAlign: "middle" }} />の印があるところ）に向かいパスワードを言おう！
@@ -40,7 +41,8 @@ const Home = () => {
                     ※<img alt="モンスター" src={qa1} width="30" style={{ verticalAlign: "middle" }} />と<img alt="モンスター" src={qa2} width="30" style={{ verticalAlign: "middle" }} />は張り紙があるのでそのQR コードを読み込んで謎解きに挑戦してください。ほかは人がQR コードを持っているのでそれを読み込んでください。
                 </Typography>
             </Box>
-            <Box sx={{ marginTop: 6 }}>
+            <Divider sx={{marginTop:3,marginBottom:3}}/>
+            <Box >
                 <Typography variant="h5">謎解きカード</Typography>
                 <Card sx={{ marginTop: 1, p: 1 }}>
                     <img src={imgCard} width="100%" alt="謎解きカード" />
