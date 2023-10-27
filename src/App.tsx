@@ -6,6 +6,7 @@ import {AppBar,Box,Toolbar,Typography,Container} from '@mui/material';
 import '@fontsource/roboto/500.css';
 import { createTheme,ThemeProvider } from '@mui/material/styles';
 import { Link } from '@mui/material';
+import VideoPage from "./routes/videoPage";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/questions/:id" element={<Questions />} />
             <Route path="*" element={<ErrorPage />} />
+            <Route path="/video" element={<VideoPage />} />
           </Routes>
         </Box>
       </Container>
