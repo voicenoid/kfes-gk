@@ -21,7 +21,7 @@ const videoPage = () => {
                 <Youtube videoId="AWrVgtJfnzY" opts={opts}/>
             </Container>
             <Container sx={{ display: "flex", justifyContent: "center", marginTop: 3}}>
-                <Link to="../"><Button variant="contained">次へ進む</Button></Link>
+                <Link to="/"><Button variant="contained">次へ進む</Button></Link>
             </Container>
             
         </div>
