@@ -1,9 +1,15 @@
 import { Button, Container } from '@mui/material';
 import Youtube from 'react-youtube';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 
-const videoPage = () => {
+const VideoPage = () => {
+    const [playState, setPlayState] = useState<boolean>(false);
+
+    const Played = () =>{
+        setPlayState(true);
+    }
     const opts = {
         width: window.innerWidth*4/5,        
         playerVars: { 
@@ -18,14 +24,14 @@ const videoPage = () => {
     return(
         <div>
             <Container sx={{ marginTop: 3,}} >
-                <Youtube videoId="AWrVgtJfnzY" opts={opts}/>
+                <Youtube videoId="AWrVgtJfnzY" opts={opts} onEnd={Played}/>
             </Container>
             <Container sx={{ display: "flex", justifyContent: "center", marginTop: 3}}>
-                <Link to="/"><Button variant="contained">次へ進む</Button></Link>
+                {playState?<Link to="/"><Button variant="contained">次へ進む</Button></Link>:<Button disabled>次へ進む</Button>}
             </Container>
             
         </div>
     )
 }
 
-export default videoPage;
+export default VideoPage;
