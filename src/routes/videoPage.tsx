@@ -27,7 +27,7 @@ const VideoPage = () => {
                 <Youtube videoId="AWrVgtJfnzY" opts={opts} onEnd={Played}/>
             </Container>
             <Container sx={{ display: "flex", justifyContent: "center", marginTop: 3}}>
-                {playState?<Link to="/"><Button variant="contained">次へ進む</Button></Link>:<Button disabled>次へ進む</Button>}
+                {playState?<Link to="/kfes-gk"><Button variant="contained">次へ進む</Button></Link>:<Button disabled>次へ進む</Button>}
             </Container>
             
         </div>

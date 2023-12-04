@@ -27,10 +27,10 @@ function App() {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              <Link href="/" sx={{ color: "white" }} underline='none'>緊急クエスト</Link>
+              <Link href="/kfes-gk" sx={{ color: "white" }} underline='none'>緊急クエスト</Link>
             </Typography>
             <IconButton color="inherit">
-              <Link href="/video" sx={{ color: "white" }} underline='none'>
+              <Link href="/kfes-gk/video" sx={{ color: "white" }} underline='none'>
                 <Movie />
               </Link>
             </IconButton>

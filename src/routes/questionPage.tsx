@@ -76,7 +76,7 @@ const QuestionPage = (props: Props) => {
                     </Grid>
                 </Container>
                 <Container sx={{ display: "flex", justifyContent: "center" }}>
-                    <Link to="/"><Button variant="contained">ホームへ戻る</Button></Link>
+                    <Link to="/kfes-gk"><Button variant="contained">ホームへ戻る</Button></Link>
                 </Container>
 
             </div>
